@@ -1,10 +1,17 @@
-# Snowman
+# SnowTheMan
+
+SnowTheMan is a story format to be used with Twine 2 based on Snowman
 
 Snowman is a minimal Twine 2 story format designed for people who already know
 JavaScript and CSS. It's designed to implement basic functionality for playing
 Twine stories and then get out of your way.
 
 Snowman includes [jQuery](http://jquery.com) and [Underscore](http://underscorejs.org/) for you.
+
+## Changes From Snowman
+
+SnowTheMan is build with the idea of allowing users to see the different passages in a continuos text, that is only changed in specific moments inside the adventure (changes in locations, etc.)
+
 
 ## Changes From The Norm
 
