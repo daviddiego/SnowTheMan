@@ -1,0 +1,10 @@
+<tw-storydata name="test1" startnode="1" creator="Twine" creator-version="2.2.1" ifid="3B400A74-7F12-4FF7-A689-EBE6AB1402AE" zoom="1" format="Snowman" format-version="1.3.0" options="" hidden=""><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="aa" tags="" position="197.5,100" size="100,100">Esto es aa
+
+[[bb]]
+[[cc]]</tw-passagedata><tw-passagedata pid="2" name="bb" tags="" position="122.5,250" size="100,100">esto es bb
+
+[[aa]]
+[[cc]]</tw-passagedata><tw-passagedata pid="3" name="cc" tags="" position="272.5,250" size="100,100">Esto es cc
+
+[[aa]]
+[[bb]]</tw-passagedata></tw-storydata>

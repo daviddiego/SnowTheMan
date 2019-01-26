@@ -21,7 +21,8 @@ Promise.all([
 		htmlTemplate({
 			style: fs.readFileSync('src/basic.css'),
 			script: results[0].stdout
-		})
+		}).replace("{{STORY_DATA}}",fs.readFileSync('src/story.txt'))
+		.replace("{{STORY_NAME}}","This is the title")
 	);
 
 
