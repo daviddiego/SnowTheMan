@@ -8,6 +8,7 @@
   "scripts": {
     "clean": "rimraf build/ dist/",
     "build": "node scripts/build-format.js && node scripts/build-guide.js",
+    "preview": "node scripts/preview-format.js",
     "lint": "eslint 'src/**/*.js' || exit 0",
     "start": "onchange -iw 'src/**' 'guide/**' -- npm run build",
     "test": "karma start || exit 0"
