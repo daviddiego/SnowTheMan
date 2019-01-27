@@ -152,6 +152,22 @@ var Story = function(dataEl) {
 	);
 
 	/**
+	 An array of user-specific scripts to run when the story is begun.
+	 @property userScripts
+	 @type Array
+	**/
+
+	this.userJavaScripts = _.chain(dataEl.children())
+	.filter( function(el) {
+	    debugger;
+	    return el.attributes.tags ? el.attributes.tags.value=="javascript" : false})
+	.map(
+		function(el) {
+			return $(el).html();
+		}
+	).value();
+
+	/**
 	 An array of user-specific style declarations to add when the story is
 	 begun.
 	 @property userStyles
@@ -247,6 +263,14 @@ _.extend(Story.prototype, {
 		_.each(this.userScripts, function(script) {
 			eval(script);
 		}, this);
+
+
+		/* Run user javascripts. */
+
+		_.each(this.userJavaScripts, function(script) {
+			eval(script);
+		}, this);
+
 
 		/**
 		 Triggered when the story is finished loading, and right before
